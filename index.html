@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DYD Example</title>
+
+    <!-- 3rd party libs -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- dyd style -->
+    <link rel="stylesheet" href="/DrawYourDiagram/css/dyd.css">
+
+    <!-- dyd javascript -->
+    <script src="/DrawYourDiagram/js/dyd.js"></script>
+    <script src="/DrawYourDiagram/js/dyd.defaults.js"></script>
+    <script src="/DrawYourDiagram/js/dyd.barchart.js"></script>
+    <script src="/DrawYourDiagram/js/dyd.elems.js"></script>
+    <script src="/DrawYourDiagram/js/dyd.canvas.js"></script>
+    <script src="/DrawYourDiagram/js/libs/dyd.utils.js"></script>
+
+</head>
+<body>
+
+    <div id="dyd-wrapper" style="width: 800px; height: 600px; margin: 40px auto;">
+
+        <div class="dyd-axis" id="dyd-yaxis">
+            <div class="yaxis-title">Temp Label</div>
+            <div class="yaxis-value">10</div>
+            <div class="yaxis-value">9</div>
+            <div class="yaxis-value">8</div>
+            <div class="yaxis-value">7</div>
+            <div class="yaxis-value">6</div>
+            <div class="yaxis-value">5</div>
+            <div class="yaxis-value">4</div>
+            <div class="yaxis-value">3</div>
+            <div class="yaxis-value">2</div>
+            <div class="yaxis-value">1</div>
+            <div class="yaxis-value">0</div>
+        </div>
+
+        <canvas width="700px" height="550px"></canvas>
+
+        <div class="dyd-axis" id="dyd-xaxis">
+            <div class="xaxis-value">aaa</div>
+            <div class="xaxis-value">bbb</div>
+            <div class="xaxis-value">ccc</div>
+            <div class="xaxis-value">ddd</div>
+            <div class="xaxis-value">eee</div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $("#dyd-wrapper").dyd();
+        });
+    </script>
+</body>
+</html>

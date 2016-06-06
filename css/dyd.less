@@ -1,0 +1,65 @@
+#dyd-wrapper {
+    canvas {
+        border: 1px solid lightgray;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+
+    #dyd-yaxis {
+        position: relative;
+
+        .yaxis-title {
+            transform: rotate(-90deg);
+            transform-origin: left top 0;
+            position: absolute;
+            top: 350px;
+            font-family: "Arial", "Helvetica", sans-serif;
+            font-size: 24px;
+        }
+
+        .yaxis-value {
+            position: absolute;
+            left: 50px;
+
+            .top(@i) {
+                &:nth-child(@{i}) {
+                    top: (@i - 2) * 55px;
+                }
+            }
+
+            .top(2);
+            .top(3);
+            .top(4);
+            .top(5);
+            .top(6);
+            .top(7);
+            .top(8);
+            .top(9);
+            .top(10);
+            .top(11);
+            .top(12);
+        }
+    }
+
+    #dyd-xaxis {
+        margin-left: 70px;
+        position: relative;
+
+        .xaxis-value {
+            position: absolute;
+
+            .left(@i) {
+                &:nth-child(@{i}) {
+                    left: 60px + (@i - 1) * 140px;
+                }
+            }
+
+            .left(1);
+            .left(2);
+            .left(3);
+            .left(4);
+            .left(5);
+        }
+    }
+
+}
